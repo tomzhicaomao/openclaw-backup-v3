@@ -4,8 +4,8 @@
 # Keep everything else
 !.gitignore
 !.gitattributes
+!*.md
 backup.sh
-README*.md
 scripts/
 config/
 backups/
