@@ -1,0 +1,61 @@
+gui/501/ai.openclaw.gateway-18789 = {
+	active count = 1
+	path = /Users/thomas/Library/LaunchAgents/ai.openclaw.gateway-18789.plist
+	type = LaunchAgent
+	state = running
+
+	program = /bin/bash
+	arguments = {
+		/bin/bash
+		-lc
+		$HOME/.openclaw/startup-scripts/run-openclaw-service.sh main-gateway
+	}
+
+	working directory = /Users/thomas
+
+	stdout path = /Users/thomas/.openclaw/logs/gateway-18789.log
+	stderr path = /Users/thomas/.openclaw/logs/gateway-18789.err.log
+	inherited environment = {
+		SSH_AUTH_SOCK => /private/tmp/com.apple.launchd.KFkktaFeWh/Listeners
+	}
+
+	default environment = {
+		PATH => /usr/bin:/bin:/usr/sbin:/sbin
+	}
+
+	environment = {
+		PATH => /usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin
+		HOME => /Users/thomas
+		XPC_SERVICE_NAME => ai.openclaw.gateway-18789
+	}
+
+	domain = gui/501 [100003]
+	asid = 100003
+	minimum runtime = 10
+	exit timeout = 5
+	runs = 1236
+	pid = 84919
+	immediate reason = inefficient
+	forks = 4
+	execs = 5
+	initialized = 1
+	trampolined = 1
+	started suspended = 0
+	proxy started suspended = 0
+	last exit code = 0
+
+	spawn type = daemon (3)
+	jetsam priority = 40
+	jetsam memory limit (active) = (unlimited)
+	jetsam memory limit (inactive) = (unlimited)
+	jetsamproperties category = daemon
+	jetsam thread limit = 32
+	cpumon = default
+	job state = running
+	probabilistic guard malloc policy = {
+		activation rate = 1/1000
+		sample rate = 1/0
+	}
+
+	properties = keepalive | runatload | inferred program | managed LWCR | has LWCR
+}

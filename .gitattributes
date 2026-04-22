@@ -1,0 +1,2 @@
+# No LFS tracking - backup files are stored as regular Git files
+# Backup archives are already encrypted with age and compressed

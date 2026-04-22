@@ -1,0 +1,11 @@
+# Logs only - backup archives ARE tracked for full recovery
+*.log
+
+# Keep everything else
+!.gitignore
+!.gitattributes
+backup.sh
+README*.md
+scripts/
+config/
+backups/

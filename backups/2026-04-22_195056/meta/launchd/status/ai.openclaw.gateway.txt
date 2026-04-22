@@ -1,0 +1,2 @@
+Bad request.
+Could not find service "ai.openclaw.gateway" in domain for user gui: 501
