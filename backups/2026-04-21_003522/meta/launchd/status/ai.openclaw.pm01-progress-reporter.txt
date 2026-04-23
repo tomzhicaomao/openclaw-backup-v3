@@ -1,2 +1,0 @@
-Bad request.
-Could not find service "ai.openclaw.pm01-progress-reporter" in domain for user gui: 501
